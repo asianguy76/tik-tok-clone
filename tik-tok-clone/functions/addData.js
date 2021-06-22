@@ -19,7 +19,7 @@ const data = [
   id: 0,
   name: "Satoru Gojo",
   username: "blindmesenpai",
-  avatar: "https://i.imgur.com/01iUdAk.jpg",
+  avatar: "https://i.imgur.com/WEuD2s0.jpg",
   is_followed: true,
   video: "https://i.imgur.com/fk10lld.mp4",
   caption: "Watch and learn.",
