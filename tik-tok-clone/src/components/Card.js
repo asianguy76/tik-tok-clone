@@ -1,4 +1,12 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCommentDots, faHeart, faShareSquare} from '@fortawesome/free-solid-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faCommentDots, faHeart, faShareSquare)
+
+
 
 const Card = ({ user, toggleFollow }) => {
 
@@ -29,14 +37,16 @@ const Card = ({ user, toggleFollow }) => {
           <source src={user.video} type="video/mp4" />
         </video>
         <div className="section socials">
-           <i class="far fa-heart"></i>
+     
+           <FontAwesomeIcon icon={faHeart} />
           <div className="social-tag">{user.likes}</div>
-          <i class="far fa-comment-dots"></i>
+          <FontAwesomeIcon icon={faCommentDots} />
           <div className="social-tag">{user.comments}</div>
-          <i class="far fa-share-square"></i>
+          <FontAwesomeIcon icon={faShareSquare} />
         </div>
     </div>
   )
 }
 
 export default Card
+

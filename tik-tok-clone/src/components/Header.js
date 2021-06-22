@@ -1,10 +1,22 @@
-function Header() {
-    return (
-      <div className="header">
-          <h1>Header</h1>
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Header = () => {
+  return (
+    <div className="header">
+      <Link to='/'>
+        <div className="logo"></div>
+      </Link>
+      <div className="upload-container">
+        <div className="section">
+          <Link to='/upload'>
+            <div className="upload" />
+          </Link>
+          <img className="personal" src="https://i.imgur.com/3kTQUB1.jpg?1" />
+        </div>
       </div>
-    );
-  }
+    </div>
+  )  
+}
   
-  export default Header;
-  
+export default Header
